@@ -1,0 +1,26 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+overflow-x:hidden;
+}
+
+/* MAIN CONTENT NEXT TO SIDEBAR */
+
+.main-content{
+margin-left:70px;
+min-height:100vh;
+
+/* IMPORTANT FIX */
+width:calc(100% - 70px);
+
+transition:margin-left 0.3s ease;
+
+box-sizing:border-box;
+}
+
+/* when sidebar expands */
+
+.main-content.expanded{
+margin-left:220px;
+width:calc(100% - 220px);
+}

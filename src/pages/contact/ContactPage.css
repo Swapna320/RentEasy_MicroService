@@ -1,0 +1,264 @@
+/* PAGE BACKGROUND */
+
+.contact-container{
+
+min-height:100vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+padding:40px;
+
+/* DARK GLASS BACKGROUND */
+
+background:
+radial-gradient(circle at 20% 20%, rgba(0,200,255,0.25), transparent 40%),
+radial-gradient(circle at 80% 80%, rgba(0,100,255,0.25), transparent 40%),
+linear-gradient(135deg,#020617,#0f172a,#1e293b);
+
+font-family:"Poppins",sans-serif;
+
+color:white;
+
+}
+
+
+/* TITLE */
+
+.contact-container h2{
+
+font-size:38px;
+
+margin-bottom:10px;
+
+letter-spacing:1px;
+
+color:#38bdf8;
+
+text-shadow:0 0 15px rgba(0,200,255,0.4);
+
+}
+
+
+/* SUBTEXT */
+
+.contact-container p{
+
+opacity:0.8;
+
+margin-bottom:35px;
+
+font-size:16px;
+
+}
+
+
+/* GLASS FORM */
+
+.contact-form{
+
+width:420px;
+
+padding:80px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,0.15);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.6),
+inset 0 0 20px rgba(255,255,255,0.05);
+
+display:flex;
+flex-direction:column;
+gap:16px;
+
+animation:fadeIn 0.6s ease;
+
+}
+
+
+/* LABEL */
+
+.contact-form label{
+
+font-size:14px;
+
+opacity:0.9;
+
+}
+
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:14px 16px;
+
+border-radius:12px;
+
+border:1px solid rgba(255,255,255,0.2);
+
+background:rgba(255,255,255,0.08);
+
+color:white;
+
+font-size:14px;
+
+outline:none;
+
+transition:all 0.3s ease;
+
+}
+
+
+/* PLACEHOLDER */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+color:#cbd5f5;
+
+}
+
+
+/* INPUT FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+border:1px solid #38bdf8;
+
+box-shadow:
+0 0 10px rgba(56,189,248,0.6),
+0 0 20px rgba(56,189,248,0.3);
+
+transform:scale(1.02);
+
+}
+
+
+/* TEXTAREA */
+
+.contact-form textarea{
+
+resize:none;
+
+height:110px;
+
+}
+
+
+/* BUTTON */
+
+.contact-form button{
+
+margin-top:10px;
+
+padding:14px;
+
+border:none;
+
+border-radius:30px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+background:linear-gradient(135deg,#38bdf8,#0ea5e9,#22d3ee);
+
+color:white;
+
+transition:all 0.3s ease;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,0.5),
+0 0 15px rgba(0,200,255,0.5);
+
+}
+
+
+/* BUTTON HOVER */
+
+.contact-form button:hover{
+
+transform:translateY(-3px) scale(1.03);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.6),
+0 0 25px rgba(0,200,255,0.7);
+
+background:linear-gradient(135deg,#0ea5e9,#22d3ee,#67e8f9);
+
+}
+
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(25px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.contact-form{
+
+width:95%;
+padding:30px;
+
+}
+
+}a/* PAGE BACKGROUND */
+
+.contact-container{
+
+min-height:100vh;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+padding:40px;
+
+/* FIX SIDEBAR OFFSET */
+margin-left:70px;
+width:calc(100% - 70px);
+box-sizing:border-box;
+
+/* DARK GLASS BACKGROUND */
+
+background:
+radial-gradient(circle at 20% 20%, rgba(0,200,255,0.25), transparent 40%),
+radial-gradient(circle at 80% 80%, rgba(0,100,255,0.25), transparent 40%),
+linear-gradient(135deg,#020617,#0f172a,#1e293b);
+
+font-family:"Poppins",sans-serif;
+color:white;
+
+}

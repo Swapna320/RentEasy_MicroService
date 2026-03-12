@@ -1,0 +1,102 @@
+.property-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+/* space between cards */
+gap:40px;
+
+width:100%;
+max-width:1250px;
+margin:0 auto;
+
+/* glassmorphism container */
+background:rgba(255,255,255,0.25);
+
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+border-radius:24px;
+
+/* space between container edge and cards */
+padding:50px;
+
+border:1px solid rgba(255,255,255,0.4);
+
+box-shadow:0 20px 45px rgba(0,0,0,0.15);
+
+box-sizing:border-box;
+
+}
+/* TITLE */
+
+.gradient-text{
+font-size:34px;
+font-weight:700;
+margin-bottom:40px;
+text-align:center;
+
+background:linear-gradient(90deg,#4f46e5,#06b6d4);
+
+-webkit-background-clip:text;
+background-clip:text;
+
+-webkit-text-fill-color:transparent;
+}
+
+/* OUTER GLASS CONTAINER */
+
+.property-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+/* GAP BETWEEN CARDS */
+gap:40px;
+
+width:100%;
+max-width:1250px;
+
+/* glassmorphism */
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+border-radius:24px;
+
+/* SPACE BETWEEN CONTAINER EDGE AND CARDS */
+padding:50px;
+
+border:1px solid rgba(255,255,255,0.4);
+
+box-shadow:0 20px 45px rgba(0,0,0,0.15);
+background:linear-gradient(
+rgba(255,255,255,0.25),
+rgba(255,255,255,0.1)
+);
+
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,0.35);
+
+box-shadow:
+0 20px 45px rgba(0,0,0,0.15),
+inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1000px){
+.property-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media (max-width:650px){
+.property-grid{
+grid-template-columns:1fr;
+}
+}

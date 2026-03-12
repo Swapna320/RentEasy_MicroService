@@ -1,0 +1,21 @@
+.sidebar{
+  width:230px;
+  height:100vh;
+  background:#0f172a;
+  color:white;
+  padding:20px;
+  position:fixed;
+}
+
+.sidebar a{
+  display:block;
+  margin:12px 0;
+  text-decoration:none;
+  color:#cbd5f5;
+  padding:8px;
+  border-radius:6px;
+}
+
+.sidebar a:hover{
+  background:#1e293b;
+}

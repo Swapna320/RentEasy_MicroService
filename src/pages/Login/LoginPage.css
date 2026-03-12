@@ -1,0 +1,94 @@
+.login-container{
+width:380px;
+margin:auto;
+margin-top:80px;
+padding:35px;
+text-align:center;
+
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+
+border-radius:16px;
+border:1px solid rgba(255,255,255,0.18);
+
+box-shadow:0 20px 40px rgba(0,0,0,0.45);
+
+color:white;
+}
+
+.login-form{
+display:flex;
+flex-direction:column;
+margin-top:20px;
+gap:14px;
+}
+
+.login-form label{
+font-weight:600;
+text-align:left;
+}
+
+.input-group{
+display:flex;
+align-items:center;
+background:rgba(255,255,255,0.12);
+border-radius:10px;
+padding:10px 14px;
+gap:10px;
+border:1px solid rgba(255,255,255,0.2);
+}
+
+.input-group input{
+border:none;
+outline:none;
+flex:1;
+background:transparent;
+color:white;
+font-size:14px;
+}
+
+.input-group input::placeholder{
+color:rgba(255,255,255,0.6);
+}
+
+.input-icon{
+color:white;
+font-size:16px;
+}
+
+.login-form input:focus{
+box-shadow:0 0 0 2px #38bdf8;
+}
+
+.login-form button{
+margin-top:10px;
+padding:12px;
+background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+
+.login-form button:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.login-link{
+margin-top:15px;
+font-size:14px;
+}
+
+.login-link a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:500;
+}
+
+.login-link a:hover{
+text-decoration:underline;
+}

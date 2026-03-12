@@ -1,0 +1,160 @@
+.auth-container{
+height:100vh;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* VIDEO BACKGROUND */
+
+.bg-video{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+object-fit:cover;
+z-index:-10;
+}
+
+/* DARK OVERLAY */
+
+.auth-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100vw;
+height:100vh;
+background:rgba(0,0,0,0.55);
+z-index:-5;
+}
+
+/* GLASS CARD */
+
+.auth-card{
+width:380px;
+padding:45px 40px;
+border-radius:18px;
+
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+
+border:1px solid rgba(255,255,255,0.15);
+box-shadow:0 10px 40px rgba(0,0,0,0.45);
+
+text-align:center;
+color:white;
+}
+
+/* TITLE */
+
+.auth-title{
+font-size:28px;
+margin-bottom:25px;
+letter-spacing:1px;
+}
+
+/* FORM */
+
+.auth-form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+/* INPUT GROUP */
+
+.input-group{
+position:relative;
+width:100%;
+}
+
+.input-icon{
+position:absolute;
+left:12px;
+top:50%;
+transform:translateY(-50%);
+color:#cbd5f5;
+font-size:14px;
+}
+
+/* INPUTS */
+
+.auth-form input{
+width:100%;
+padding:12px 14px 12px 38px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.3);
+background:rgba(255,255,255,0.1);
+color:white;
+font-size:14px;
+outline:none;
+box-sizing:border-box;
+}
+
+.auth-form input::placeholder{
+color:#cbd5f5;
+}
+
+.auth-form input:focus{
+border:1px solid #4facfe;
+box-shadow:0 0 8px rgba(79,172,254,0.7);
+}
+
+/* SELECT */
+
+.auth-form select{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,0.3);
+background:rgba(255,255,255,0.1);
+color:white;
+outline:none;
+box-sizing:border-box;
+cursor:pointer;
+}
+
+.auth-form select option{
+background:white;
+color:black;
+}
+
+/* BUTTON */
+
+.auth-btn{
+margin-top:10px;
+padding:12px;
+border:none;
+border-radius:25px;
+background:linear-gradient(90deg,#4facfe,#00f2fe);
+color:white;
+font-size:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.auth-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 12px rgba(0,242,254,0.7);
+}
+
+/* LINK */
+
+.auth-link{
+margin-top:18px;
+font-size:14px;
+}
+
+.auth-link a{
+color:#4facfe;
+text-decoration:none;
+}
+
+.auth-link a:hover{
+text-decoration:underline;
+}

@@ -1,0 +1,29 @@
+.details-container{
+padding:40px;
+margin-left:70px;
+}
+
+.details-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.details-grid img{
+width:100%;
+border-radius:10px;
+}
+
+.details-info{
+font-size:18px;
+}
+
+.apply-btn{
+margin-top:20px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
